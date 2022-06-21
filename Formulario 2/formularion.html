@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOCINE</title>
+</head>
+<body>
+    <h1>BIENVENIDO AL AUTOCINE CATAMARCA</h1>
+
+    <form id="form">
+
+        <h2>Completar los siguiente datos</h2>
+        <select name="selectVehiculo">
+            <option value="0">Seleccionar Vehiculo</option>
+            <option value="Auto">Auto</option>
+            <option value="Camioneta">Camioneta</option>
+            <option value="Otro">Otro</option>
+        </select>
+        <br><br>
+        
+        <label for="cantPersonasMayores">Cantidad de personas (Mayores a 8 años) :</label>
+        <input type="number" name="cantPersonasMayores" id="cantMayores"><br><br>
+        <label for="cantPersonasMenores">Cantidad de personas (Menores a 8 años) :</label>
+        <input type="number" name="cantPersonasMenores" id="cantMenores"><hr>
+
+        <h3>Elegir forma de pago</h3>
+
+        <label for="pagoElegido">Contado</label>
+        <input type="radio" name="pagoElegido" value="Contado" checked><br><br>
+        
+        <label for="pagoElegido">Tarjeta Visa (1-3 cuotas / 10% aumento)</label>
+        <input type="radio" name="pagoElegido" value="visa1">
+        <label for="pagoElegido">(4-6 cuotas / 25% aumento)</label>
+        <input type="radio" name="pagoElegido" value="visa2">
+        <label for="pagoElegido">(> 7 cuotas / 35% aumento)</label>
+        <input type="radio" name="pagoElegido" value="visa3"><br><br>
+        
+        <label for="pagoElegido">Tarjeta Mastercard (1-3 cuotas / 5% aumento)</label>
+        <input type="radio" name="pagoElegido" value="master1">
+        <label for="pagoElegido">(4-6 cuotas / 10% aumento)</label>
+        <input type="radio" name="pagoElegido" value="master2">
+        <label for="pagoElegido">(> 7 cuotas / 25% aumento)</label>
+        <input type="radio" name="pagoElegido" value="master3">
+        
+        <h3>Elegir comida que desean llevar</h3>
+        <select name="selectComida">
+            <option value="0">Seleccionar Comida</option>
+            <option value="1">Hamburguesa completa-Paty ($1.50)</option>
+            <option value="2">Lomito completo ($2)</option>
+            <option value="3">Hamburguesa completa-Zapping ($2)</option>
+        </select>
+        <input type="number" id="cantComida" placeholder="Cantidad">
+        <br><br>
+        
+        <label for="selectComidaOpcional">Gaseosa (1$)</label>
+        <input type="checkbox" name="selectComidaOpcional" value="Gaseosa">
+        <label for="selectComidaOpcional">Papas(0.5$)</label>
+        <input type="checkbox" name="selectComidaOpcional" value="Papas"><br><br>
+        
+        <button>Confirmar</button>
+    </form>
+
+    <script src="formularion.js"></script>
+</body>
+</html>
+<!--
+    OPCIONAL
+    <select name="selectComida">
+        <option value="0">Seleccionar Comida</option>
+        <option value="1">Hamburguesa completa-Paty</option>
+        <option value="2">Lomito completo</option>
+        <option value="3">Hamburguesa completa-Zapping</option>
+    </select>
+    <input type="number" id="cantComida" placeholder="Cantidad">
+--></input>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRÁMITE DE REGISTRO</title>
+</head>
+<body>
+    <h1>REGISTRO</h1>
+    <hr>
+    <form id="form">
+        <h2>Completar los siguiente campos</h2>
+        <label>Nombre y Apellido: <input type="text" name="name_surname" required></label>
+        <label>DNI: <input name="dni" type="number" required></label>
+        <select name="selectProvincias">
+            <option value="0">Seleccionar Provincia</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+        </select>
+        <hr>
+        <h2>Seleccionar genero</h2>
+        <label> Masculino <input type="radio" name="gender" value="Masculino" checked required></label><br>
+        <label> Femenino <input type="radio" name="gender" value="Femenino"></label><br>
+        <label> other <input type="radio" name="gender" value="other"></label><br>
+        <hr>
+        <h2>Seleccionar trámite</h2>
+        <label>Renovar <input type="checkbox" name="tramite"></label>
+        <label>Renovar <input type="checkbox" name="tramite"></label>
+        <label>Renovar <input type="checkbox" name="tramite"></label>
+        <hr>
+        <button type="submit">Comprobar</button>
+    </form>
+    <br>
+    <script src="forms.js"></script>
+</body>
+</html>
+
+<!--
+    Vamos a realizar una interfaz (simulando que es una interfaz del Registro Nacional de las
+Personas) que permitiría cargar los datos de quienes requieran certificados de esa entidad. Para
+ello esta interfaz HTML5/JavasCript debería solicitar en primer lugar
+1) Datos del solicitante (DNI y Apellido y Nombre)
+2) Debería solicitar la provincia en la que nació el solicitante – Esto debe construirse con un
+control HTML selectect
+3) Debería solicitar indicar el sexo del solicitante (varón, mujer, otros). – opciones
+excluyentes – Esto debe construirse con un control HTML input del tipo “radio”
+4) Debería poder indicar cuál es el certificado que desea requerir del registro nacional de las
+personas – Esto debe construirse con un control HTML del tipo checkbox (opciones
+incluyentes).
+-->
